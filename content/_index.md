@@ -1,8 +1,8 @@
 +++
-paginate_by = 5
-sort_by = "date"
-insert_anchor_links = "none"
-
-[extra]
-toc = false
+title= "Apollo Theme"
+template = "homepage.html"
 +++
+
+Thanks for checking out this theme!
+
+Checkout all the [options you can configure](./posts/configuration) and the [example pages](./tags/example/).

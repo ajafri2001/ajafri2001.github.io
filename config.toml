@@ -7,13 +7,8 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-theme = "radion"
-
-taxonomies = [
-    # You can enable/disable RSS
-    {name = "categories", feed = true},
-    {name = "tags", feed = true},
-]
+theme = "apollo"
+taxonomies = [{ name = "tags" }]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -21,7 +16,7 @@ taxonomies = [
 highlight_code = false
 
 [extra]
-# Put all your custom variables here
 comments = false
-toc = true
-theme = "light"
+socials = []
+menu = []
+theme = "toggle"
