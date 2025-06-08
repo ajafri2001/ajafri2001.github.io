@@ -1,6 +1,8 @@
 # The URL the site will be built for
 base_url = "https://ajafri2001.github.io/"
 
+title = "ajafri2001"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -17,6 +19,7 @@ highlight_code = false
 
 [extra]
 comments = false
-socials = []
+socials = [{ name = "github", url = "https://github.com/ajafri2001/", icon = "github" }]
 menu = []
 theme = "toggle"
+toc = false
