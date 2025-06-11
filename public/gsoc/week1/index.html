@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;ajafri2001.github.io&#x2F;">
+
+    
+
+    
+    
+    
+        <title>
+            
+                GSoC 2025 Week #1
+            
+        </title>
+
+        
+            <meta property="og:title"
+                  content="GSoC 2025 Week #1" />
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+    
+
+    
+    
+        <link href=https://ajafri2001.github.io/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    <script src=https://ajafri2001.github.io/js/codeblock.js></script>
+
+    
+    
+
+    
+    
+
+    
+
+    
+    <link rel="alternate"
+          type="application/atom+xml"
+          title="ajafri2001"
+          href="https://ajafri2001.github.io/atom.xml">
+
+
+    
+    
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://ajafri2001.github.io/theme/light.css" />
+        <link id="darkModeStyle"
+              rel="stylesheet"
+              type="text/css"
+              href="https://ajafri2001.github.io/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+        <script src=https://ajafri2001.github.io/js/themetoggle.js></script>
+
+        
+            <script>setTheme(getSavedTheme());</script>
+        
+    
+
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="https://ajafri2001.github.io/main.css" />
+
+    
+
+    </head>
+
+
+    <body>
+        <div class="content">
+            <header>
+    <div class="main">
+        
+            <a href=https:&#x2F;&#x2F;ajafri2001.github.io&#x2F;>ajafri2001</a>
+        
+
+
+        <div class="socials">
+            
+                <a rel="me" href="https:&#x2F;&#x2F;github.com&#x2F;ajafri2001&#x2F;" class="social">
+                    <img alt="github"
+                         src="https://ajafri2001.github.io/icons/social/github.svg">
+                </a>
+            
+        </div>
+    </div>
+
+    <nav>
+        
+
+        
+
+        
+            <a id="dark-mode-toggle"
+               onclick="toggleTheme(); event.preventDefault();"
+               href="#">
+                <img src="https://ajafri2001.github.io/icons/sun.svg"
+                     id="sun-icon"
+                     style="filter: invert(1)"
+                     alt="Light" />
+                <img src=https://ajafri2001.github.io/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+            <!-- Inititialize the theme toggle icons -->
+            <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+            
+            
+    
+    <main>
+        <article>
+            <div class="title">
+                
+                
+    <div class="page-header">
+        GSoC 2025 Week #1<span class="primary-color" style="font-size: 1.6em">.</span>
+    </div>
+
+
+                <div class="meta">
+                    
+                        Posted on <time>2025-06-08</time>
+                    
+
+                    
+
+                    
+
+                    :: 543 Words
+
+                    
+                    
+                        <span class="tags-label">:: Tags:</span>
+                        <span class="tags">
+                                <a href="https://ajafri2001.github.io/tags/scala/"
+                                   class="post-tag">scala</a>
+                                ,
+                            
+                                <a href="https://ajafri2001.github.io/tags/metals/"
+                                   class="post-tag">metals</a>
+                                ,
+                            
+                                <a href="https://ajafri2001.github.io/tags/gsoc/"
+                                   class="post-tag">gsoc</a>
+                                
+                            
+                        </span>
+                    
+
+                    
+                    
+
+                    
+
+                </div>
+            </div>
+
+            
+
+            
+            
+
+            <section class="body">
+                <h2 id="introduction"><a class="zola-anchor" href="#introduction" aria-label="Anchor link for: introduction">Introduction</a></h2>
+<p>This is going to be <em>(hopefully)</em> a weekly series of blog posts covering the technical details of the stuff implemented by me and my wonderful mentor <a href="https://github.com/tgodzik">@tgodik</a> for Scala Center GSOC 2025. This will be the first post in the series and I'll cover what has been done so far in the first week of the coding period.</p>
+<p>The first week has a bit of a special circumstance since even though the coding period began in June 2nd of this year, I asked my mentor if we could start early and have an extra month for free 😅.</p>
+<p>In hindsight that was the best thing I could've done since that extra time was proved to be really helpful and was put to good use.</p>
+<h2 id="stuff-accomplished-in-the-first-week"><a class="zola-anchor" href="#stuff-accomplished-in-the-first-week" aria-label="Anchor link for: stuff-accomplished-in-the-first-week">Stuff Accomplished in the first week</a></h2>
+<p>Okay, so far me and my mentor have managed to get a couple of stuff done. The high level steps that needed to be done are as follows:</p>
+<ol>
+<li>Get client/editor and metals to recognize <code>.scala.html</code> files.</li>
+<li>Set up mapping for goto/hover etc</li>
+</ol>
+<p>For the first point, detecting <code>.scala.html</code> files in vscode via adding an entry in the <a href="https://github.com/scalameta/metals-vscode">metals-vscode's</a> <code>package.json</code> was really straightforward</p>
+<pre data-lang="json" style="background-color:#fafafa;color:#61676c;" class="language-json "><code class="language-json" data-lang="json"><span>  {
+</span><span>    </span><span style="color:#86b300;">&quot;id&quot;</span><span style="color:#61676ccc;">: </span><span style="color:#86b300;">&quot;scala&quot;</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#86b300;">&quot;extensions&quot;</span><span style="color:#61676ccc;">: </span><span>[
+</span><span>      </span><span style="color:#86b300;">&quot;.scala.html&quot;
+</span><span>    ]
+</span><span>  }
+</span></code></pre>
+<p>Another thing we needed to do was allow metals itself recognize twirl's files, we did this via adding the following snippet</p>
+<pre data-lang="scala" style="background-color:#fafafa;color:#61676c;" class="language-scala "><code class="language-scala" data-lang="scala"><span style="color:#fa6e32;">def </span><span style="color:#f29718;">isTwirlTemplate</span><span>: </span><span style="color:#fa6e32;">Boolean </span><span style="color:#ed9366;">=</span><span> filename</span><span style="color:#ed9366;">.</span><span>endsWith(</span><span style="color:#86b300;">&quot;.scala.html&quot;</span><span>)
+</span></code></pre>
+<p>in some key locations inside <a href="https://github.com/scalameta/metals/blob/main/mtags-shared/src/main/scala/scala/meta/internal/mtags/CommonMtagsEnrichments.scala">CommonMtagsEnrichments.scala</a> and in <a href="https://github.com/ajafri2001/metals/blob/main/mtags/src/main/scala/scala/meta/internal/mtags/ScalametaCommonEnrichments.scala">ScalametaCommonEnrichments.scala</a>. This makes it so we can easily have logic specific to twirl templates in metals itself.</p>
+<div class="note-container">
+    
+            <div class="note-header">
+                
+                    <div class="note-icon"><p>Key Point!</p>
+</div>
+                
+            </div>
+            <div class="note-content"><p>It is important to note that twirl templates are compiled to scala source code at compile time, by default under <code>target/scala-x.x.x/twirl/main/html/*.template.scala</code></p>
+</div>
+        
+    </div>
+<p>Next we needed to add support for compiling twirl files via the <a href="https://github.com/playframework/twirl/tree/main/sbt-twirl/src">sbt-twirl</a> plugin, sbt-twirl expects twirl files to be under <code>src/main/twirl/*.scala.html</code> this is still being done and hopefully it gets resolved in week 2 😅.</p>
+<p>To implement LSP specific stuff like hover/goto-definition, we need a way to "map" between twirl templates and the scala source code it compiles down to. Thankfully, the compiled source files have additional generated content that is appended at the end of the file and it is really helpful for mapping, and an example would be here:</p>
+<pre data-lang="txt" style="background-color:#fafafa;color:#61676c;" class="language-txt "><code class="language-txt" data-lang="txt"><span>/*
+</span><span>  -- GENERATED --
+</span><span>  SOURCE: src/main/twirl/example1.scala.html
+</span><span>  HASH: 65c3b28a0faadb5f545e21fb821007050023d27d
+</span><span>  MATRIX: 601-&gt;1|709-&gt;16|746-&gt;27|770-&gt;31
+</span><span>  LINES: 15-&gt;1|20-&gt;2|20-&gt;2|20-&gt;2
+</span><span>  -- GENERATED --
+</span><span> */
+</span><span>
+</span></code></pre>
+<p>As you can see in the "Lines" row here, this implies that line 1 of the twirl file maps to line 15 of the compiled scala file, now whenever the the client request information for twirl file, we can simply give them this line number. We aren't taking into account character number here, but that's alright. We can do it next week or the next week after it :)</p>
+<p>Okay, now to extract this information out of the compiled file, we can use regex to do something like this, which sorta works.</p>
+<pre data-lang="scala" style="background-color:#fafafa;color:#61676c;" class="language-scala "><code class="language-scala" data-lang="scala"><span style="color:#fa6e32;">val </span><span>pattern </span><span style="color:#ed9366;">= </span><span style="color:#86b300;">&quot;&quot;&quot;(\d+)-&gt;(\d+)&quot;&quot;&quot;</span><span style="color:#ed9366;">.</span><span>r
+</span><span style="color:#fa6e32;">val </span><span>number_matching </span><span style="color:#ed9366;">=
+</span><span>pattern</span><span style="color:#ed9366;">.</span><span>findAllIn(templateString)</span><span style="color:#ed9366;">.</span><span>toList
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;">// Use latter half of matched regex; first half corresponds to the &quot;Matrix&quot; row
+</span><span style="color:#fa6e32;">val </span><span>numbers </span><span style="color:#ed9366;">=</span><span> number_matching</span><span style="color:#ed9366;">.</span><span>drop(number_matching</span><span style="color:#ed9366;">.</span><span>length / </span><span style="color:#ff8f40;">2</span><span>)
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;">// Map[Int, Int](1 -&gt; 15, 2 -&gt; 20, 3 -&gt; 21)  SourceFile -&gt; CompiledFile
+</span><span style="color:#fa6e32;">val </span><span>mappingMap: </span><span style="font-style:italic;color:#55b4d4;">Map</span><span>[</span><span style="color:#fa6e32;">Int</span><span style="color:#61676ccc;">, </span><span style="color:#fa6e32;">Int</span><span>] </span><span style="color:#ed9366;">=</span><span> numbers</span><span style="color:#ed9366;">.</span><span>map { </span><span style="color:#ff8f40;">s </span><span style="color:#fa6e32;">=&gt;
+</span><span style="color:#fa6e32;">val </span><span>parts </span><span style="color:#ed9366;">=</span><span> s</span><span style="color:#ed9366;">.</span><span>split(</span><span style="color:#86b300;">&quot;-&gt;&quot;</span><span>)
+</span><span style="color:#fa6e32;">val </span><span>a </span><span style="color:#ed9366;">=</span><span> parts(</span><span style="color:#ff8f40;">0</span><span>)</span><span style="color:#ed9366;">.</span><span>toInt
+</span><span style="color:#fa6e32;">val </span><span>b </span><span style="color:#ed9366;">=</span><span> parts(</span><span style="color:#ff8f40;">1</span><span>)</span><span style="color:#ed9366;">.</span><span>toInt
+</span><span>b -&gt; a
+</span><span>}</span><span style="color:#ed9366;">.</span><span>toMap
+</span></code></pre>
+<h2 id="next-week-goals"><a class="zola-anchor" href="#next-week-goals" aria-label="Anchor link for: next-week-goals">Next Week Goals</a></h2>
+<p>My goal for the next week is, to have thorough tests on the mapping and achieve reasonable sbt integration for metals, and that basic stuff like hover works.</p>
+
+            </section>
+        </article>
+    </main>
+
+
+
+            
+                
+            
+
+            
+        </div>
+    </body>
+
+</html>

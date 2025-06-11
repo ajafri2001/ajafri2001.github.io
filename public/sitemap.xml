@@ -4,34 +4,21 @@
         <loc>https://ajafri2001.github.io/</loc>
     </url>
     <url>
-        <loc>https://ajafri2001.github.io/posts/</loc>
+        <loc>https://ajafri2001.github.io/gsoc/</loc>
     </url>
     <url>
-        <loc>https://ajafri2001.github.io/posts/configuration/</loc>
-        <lastmod>2024-07-09</lastmod>
-    </url>
-    <url>
-        <loc>https://ajafri2001.github.io/posts/gsoc2025/</loc>
+        <loc>https://ajafri2001.github.io/gsoc/about/</loc>
         <lastmod>2025-06-08</lastmod>
     </url>
     <url>
-        <loc>https://ajafri2001.github.io/posts/markdown/</loc>
-        <lastmod>2022-05-01</lastmod>
+        <loc>https://ajafri2001.github.io/gsoc/page/1/</loc>
     </url>
     <url>
-        <loc>https://ajafri2001.github.io/posts/math-symbol/</loc>
-        <lastmod>2023-01-06</lastmod>
+        <loc>https://ajafri2001.github.io/gsoc/week1/</loc>
+        <lastmod>2025-06-08</lastmod>
     </url>
     <url>
-        <loc>https://ajafri2001.github.io/posts/mermaid/</loc>
-        <lastmod>2024-12-26</lastmod>
-    </url>
-    <url>
-        <loc>https://ajafri2001.github.io/posts/page/1/</loc>
-    </url>
-    <url>
-        <loc>https://ajafri2001.github.io/posts/shortcode/</loc>
-        <lastmod>2024-06-14</lastmod>
+        <loc>https://ajafri2001.github.io/posts/</loc>
     </url>
     <url>
         <loc>https://ajafri2001.github.io/projects/</loc>
@@ -52,12 +39,18 @@
         <loc>https://ajafri2001.github.io/projects/project-5/</loc>
     </url>
     <url>
+        <loc>https://ajafri2001.github.io/scala/</loc>
+    </url>
+    <url>
         <loc>https://ajafri2001.github.io/tags/</loc>
     </url>
     <url>
-        <loc>https://ajafri2001.github.io/tags/documentation/</loc>
+        <loc>https://ajafri2001.github.io/tags/gsoc/</loc>
     </url>
     <url>
-        <loc>https://ajafri2001.github.io/tags/example/</loc>
+        <loc>https://ajafri2001.github.io/tags/metals/</loc>
+    </url>
+    <url>
+        <loc>https://ajafri2001.github.io/tags/scala/</loc>
     </url>
 </urlset>

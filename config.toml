@@ -15,11 +15,16 @@ taxonomies = [{ name = "tags" }]
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+highlight_code = true
+highlight_theme = "ayu-light"
 
 [extra]
 comments = false
-socials = [{ name = "github", url = "https://github.com/ajafri2001/", icon = "github" }]
+socials = [
+              { name = "github", url = "https://github.com/ajafri2001/", icon = "github" },
+              {name = "discord", url = "https://discord.com/users/1237543552733544559", icon = "discord" }
+          ]
 menu = []
+fancy_code = true
 theme = "toggle"
 toc = false
