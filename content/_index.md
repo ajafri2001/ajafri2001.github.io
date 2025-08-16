@@ -1,8 +1,6 @@
 +++
-title= "Abdullah's Blog"
+title= "BOO YAH!"
 template = "homepage.html"
+sort_by = "date"
+insert_anchor_links = "heading"
 +++
-
-Thanks for checking out this theme!
-
-Checkout all the [options you can configure](./posts/configuration) and the [example pages](./tags/example/).

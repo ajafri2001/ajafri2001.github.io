@@ -1,3 +1,0 @@
-+++
-title= "Abdullah's Blog"
-+++
