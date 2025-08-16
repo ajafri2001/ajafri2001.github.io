@@ -9,7 +9,7 @@ tags=["scala","advanced","compile-time", "typelevel"]
 ## Introduction
 
 There's not a whole lot of content that explains typeclasses in Scala well, especially from the point of why we should bother using them. Most concepts in functional programming aren't immediately obvious. As an example, it
-can be difficult to reason about why certain abstractions are useful when, in short snippets, they may look either terse or even boilerplate code. In this article, I aim to provide some evidences of why typeclasses can be valuable and where they can be applied.
+can be difficult to reason about why certain abstractions are useful when, in short snippets, they may look either terse or even boilerplate'ish code. In this article, I aim to provide some evidences of why typeclasses can be valuable and where they can be applied.
 
 Let's assume we need to design a user-facing json library that exposes a clean and ergonomic API for serializing data. To this end will implement and compare three different ways to serialize JSON to a string in Scala.
 

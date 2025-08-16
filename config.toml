@@ -30,5 +30,5 @@ mathjax = true
  mathjax_dollar_inline_enable = true
 
 fancy_code = true
-theme = "light"
+theme = "toggle"
 toc = true
