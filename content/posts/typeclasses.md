@@ -1,6 +1,6 @@
 +++
 title = "Typeclasses in Scala3"
-date = "2025-08-10"
+date = "2025-08-15"
 
 [taxonomies]
 tags=["scala","advanced","compile-time", "typelevel"]
