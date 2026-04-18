@@ -598,7 +598,7 @@ We will primarily focus on typelevel computations in this blog, the goal is also
 
 Scala3's standard library includes a typeclass `Mirror` in the `scala.deriving` package that provides *compile-time reflection* specifically for Product and Sum types.
 
-Quoting the [documentation](https://www.scala-lang.org/api/current/scala/deriving/Mirror.html), ***Mirrors allows typelevel access to enums, case classes and objects, and their sealed parents.*** Reading the documentation is highly recommended as well as poking through the [source code](https://github.com/scala/scala3/blob/3.7.2/library/src/scala/deriving/Mirror.scala#L5).
+Quoting the [documentation](https://www.scala-lang.org/api/current/scala/deriving/Mirror.html), ***Mirrors allows typelevel access to enums, case classes and objects, and their sealed parents.*** Reading the documentation is highly recommended as well as poking through the [source code](https://github.com/scala/scala3/blob/3.7.2/library/src/scala/deriving/Mirror.scala).
 
 Let's try to play around with the library before jumping into the derivation part.
 
